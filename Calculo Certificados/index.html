@@ -1,0 +1,62 @@
+<!--* Calculo de Certificados financieros
+ * Copyright 2016 Desiree Peralta Encarnacion
+ * DesireePeraltaE@gmail.com
+ * https://github.com/Dessyperalt -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculo de inversiones</title>
+	<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	    <link rel="stylesheet" type="text/css" href="css/Style.css">
+</head>
+<body>
+
+	<div class="panel panel-default">
+	 
+	  <div class="panel-body">
+
+	    	<label for="Monto">Monto:</label>
+	  		<input type="text" class="form-control" maxlength="40" placeholder="Monto" aria-describedby="basic-addon1" name = "Monto" id ="Monto">
+	  		<br/>
+	  		<label for="Tasa" >Tasa:</label>
+	  		<input type="text" class="form-control" maxlength="40" placeholder="0" aria-describedby="basic-addon1" name = "Tasa" id = "Tasa">
+	  		<br/>
+	  		<label for="Meses" >Meses:</label>
+	  		<input type="text" class="form-control" maxlength="40" placeholder="0" aria-describedby="basic-addon1" name = "Meses" id = "Meses">
+	  		<br/>
+	  		<button class = "btn btn-primary" onClick="agregar()">Agregar</button>
+	  		<button class = "btn btn-success" id = "imprimir">Imprimir</button>
+	  		<button class = "btn btn-danger" onClick="borrar()">Borrar</button>
+
+	  </div>
+	</div>
+
+	<div class="panel panel-default resultadoPanel">
+		<div class="panel-body">
+			 <table class="table table-striped" id = "Inversion">
+			    <thead>
+			      <tr>
+			        <th>Monto</th>
+			        <th>Tasa</th>
+			        <th>Meses</th>
+			        <th>Total Mensual</th>
+			        <th>Total</th>
+			      </tr>
+			    </thead>
+			  </table>
+		</div>
+	</div>
+
+
+<center>© 2016 Desiree Peralta</center>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/javaS.js" type="text/javascript"></script>
+    <script type="text/javascript">
+	</script>
+</body>
+</html>
